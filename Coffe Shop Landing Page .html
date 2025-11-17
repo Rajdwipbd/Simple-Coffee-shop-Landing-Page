@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Landing Page</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-section">
+            <img src="https://i.ibb.co.com/BKyvhPTZ/Gemini-Generated-Image-flks7jflks7jflks.png" alt="Coffee Logo"
+                class="logo-img">
+            <span class="site-name">RajBD Coffee Shop</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+        <a href="#menu" class="buy-btn">Buy Coffee</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Your Perfect Coffee, Every Morning</h1>
+            <p>Experience fresh, organic coffee in a cozy ambience. Fast service guaranteed.</p>
+            <a href="#menu" class="cta-btn">Order Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.ibb.co.com/BKyvhPTZ/Gemini-Generated-Image-flks7jflks7jflks.png" alt="Coffee Cup">
+        </div>
+    </header>
+
+    <!-- About / Features Section -->
+    <section class="features" id="features">
+        <h2>Why Choose Us</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <img src="https://img.icons8.com/color/96/000000/coffee-to-go.png" alt="Fresh Coffee">
+                <h3>Fresh Coffee</h3>
+                <p>Daily brewed from the best beans.</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/96/000000/sofa.png" alt="Cozy Ambience">
+                <h3>Cozy Ambience</h3>
+                <p>Relax in our warm, inviting space.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.ibb.co.com/KxZwSL4Z/Gemini-Generated-Image-dcuschdcuschdcus.png" alt="Fast Service">
+                <h3>Fast Service</h3>
+                <p>Quick service so you never wait long.</p>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/96/000000/organic-food.png" alt="Organic Ingredients">
+                <h3>Organic Ingredients</h3>
+                <p>High-quality ingredients for every cup.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu / Offer Section -->
+    <section class="menu" id="menu">
+        <h2>Our Top Picks</h2>
+        <div class="menu-cards">
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80"
+                    alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>$4.99</p>
+            </div>
+            <div class="menu-card">
+                <img src="https://i.ibb.co.com/5XgDPJ4K/Gemini-Generated-Image-86snee86snee86sn.png" alt="Latte">
+                <h3>Latte</h3>
+                <p>$5.49</p>
+            </div>
+            <div class="menu-card">
+                <img src="https://i.ibb.co.com/TxD2mJTL/Gemini-Generated-Image-gn96n7gn96n7gn96.png" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>$3.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer">
+                <p>"The coffee is amazing and the ambience is perfect!"</p>
+                <h4>- Sarah</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Customer">
+                <p>"Fast service and fresh coffee every time. Highly recommend."</p>
+                <h4>- John</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Contact: rajdwipmajumder9271@gmail.com | +8801703689271</p>
+            <div class="social-links">
+                <a href="mailto:rajdwipmajumder9271@gmail.com">
+                    <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Gmail">
+                </a>
+                <a href="#"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook"></a>
+
+                <a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></a>
+                <a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></a>
+
+            </div>
+            <form class="newsletter">
+                <input type="email" placeholder="Subscribe to newsletter">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
